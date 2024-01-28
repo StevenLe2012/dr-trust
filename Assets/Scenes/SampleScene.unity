@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028326, g: 0.22571333, b: 0.30692202, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -476,24 +476,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 1768069890}
   rayInteractor: {fileID: 969610090}
-  originalLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  modifiedLayerMask:
-    serializedVersion: 2
-    m_Bits: 2
-  inputAction:
-    m_UseReference: 1
-    m_Action:
-      m_Name: Input
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: d0f47480-5b0f-4bae-8f3f-0d88b8beeb2c
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: 83097790271614945, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!114 &969610090 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1874358449958474646, guid: c63527cb4ea083d47a49394f6d454851, type: 3}
@@ -1116,6 +1098,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1329735815434214491, guid: ead0aedb6abe3d046860e5d309d78e12, type: 3}
+      propertyPath: _realtime
+      value: 
+      objectReference: {fileID: 5868537161166213130}
+    - target: {fileID: 1329735815434214491, guid: ead0aedb6abe3d046860e5d309d78e12, type: 3}
+      propertyPath: _viewUUID
+      value: a00583bc-b8bc-43c9-9536-843eebdf8c05
+      objectReference: {fileID: 0}
     - target: {fileID: 2542077441101060956, guid: ead0aedb6abe3d046860e5d309d78e12, type: 3}
       propertyPath: m_Name
       value: ExampleCube
@@ -1217,6 +1207,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5065332141359310625, guid: c63527cb4ea083d47a49394f6d454851, type: 3}
+      propertyPath: _realtime
+      value: 
+      objectReference: {fileID: 5868537161166213130}
+    - target: {fileID: 5065332141359310625, guid: c63527cb4ea083d47a49394f6d454851, type: 3}
+      propertyPath: _viewUUID
+      value: 23eaaf9e-bb9a-44d3-b6f1-f12a1d4afdbf
+      objectReference: {fileID: 0}
     - target: {fileID: 5657879796569378679, guid: c63527cb4ea083d47a49394f6d454851, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -1228,6 +1226,14 @@ PrefabInstance:
     - target: {fileID: 6114345785324101712, guid: c63527cb4ea083d47a49394f6d454851, type: 3}
       propertyPath: m_UIScrollingEnabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8160882763134759428, guid: c63527cb4ea083d47a49394f6d454851, type: 3}
+      propertyPath: _realtime
+      value: 
+      objectReference: {fileID: 5868537161166213130}
+    - target: {fileID: 8160882763134759428, guid: c63527cb4ea083d47a49394f6d454851, type: 3}
+      propertyPath: _viewUUID
+      value: a1ebff0c-0791-49a2-a9fc-72528f4de86a
       objectReference: {fileID: 0}
     - target: {fileID: 8693251285915147187, guid: c63527cb4ea083d47a49394f6d454851, type: 3}
       propertyPath: m_Name
@@ -1245,6 +1251,17 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 969610089}
   m_SourcePrefab: {fileID: 100100000, guid: c63527cb4ea083d47a49394f6d454851, type: 3}
+--- !u!114 &5868537161166213130 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7898791554244002085, guid: c63527cb4ea083d47a49394f6d454851, type: 3}
+  m_PrefabInstance: {fileID: 5868537161166213129}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1424795628, guid: ebae63e7edba59945a994528ada1f7a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6924624241169103319
 PrefabInstance:
   m_ObjectHideFlags: 0

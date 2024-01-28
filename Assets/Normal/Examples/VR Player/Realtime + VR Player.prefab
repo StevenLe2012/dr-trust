@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4520454903943832}
   - component: {fileID: 114501696213753918}
   - component: {fileID: 114568985850100520}
+  - component: {fileID: 6961463302257287853}
   m_Layer: 0
   m_Name: Realtime + VR Player
   m_TagString: Untagged
@@ -67,3 +68,17 @@ MonoBehaviour:
     head: {fileID: 0}
     leftHand: {fileID: 0}
     rightHand: {fileID: 0}
+--- !u!114 &6961463302257287853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572161834460568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62dfff2a4e701f949bba5f062b3c746d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doctorColor: {r: 1, g: 0.65312773, b: 0.07075471, a: 0}
+  patientColor: {r: 0, g: 0.22627214, b: 0.69803923, a: 0}
