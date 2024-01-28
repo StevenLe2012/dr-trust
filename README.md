@@ -1,4 +1,4 @@
-# Your Project Name Here
+# Dr. Trust
 
 Obviously, this is not what your README should say on-submission. Change it. Yes, the whole thing.
 
@@ -8,30 +8,26 @@ This is where a description of your project will go. README.md files support [Ma
 
 **Oh yeah, by the way, don't forget to set up `git lfs` on your machine.**
 
-Tell everyone what your project needs in order to run. This might involve many components or software. Maybe some cool libraries?
 
 ### Hardware Required
 
-- Some polyphonic headset on OS version `3.14159265358979323846233832795028841971` with room-temperature hyperconductors
-- Some macrocontroller with specific hardware revision `4.2`
-  - With tank wheels
-- Some computer with a holoported underdisplay cap
-- Some fancy smart device that is worn and knows your favorite toothpaste
+- Quest 3 Device
 
 ### Software Dependencies
-
+DO WE NEED?
 - Division Game Engine version `2024.1.26`
 - Michaelsoft Binbows `XD`
 
 ## Run
 
-1. Open the thing
-   - You know, that thing over there
-     - No, not that one
-     - Go back
-     - Yes, that one
-2. Click the button and type the following text:
+### APK Method
+1. Sideload this [APK](https://www.google.com/) onto your Quest. Many ways to do so:
+    1. [SideQuest](https://sidequestvr.com/)
+    2. [Meta Quest Developor Hub](https://developer.oculus.com/meta-quest-developer-hub/)
+2. 
 
+
+### GitHub Method 
 ```shell
 # install the sotware
 sudo apt install -y cmatrix
@@ -47,6 +43,8 @@ cmatrix
 
 ## Shout-Outs
 
-Or is it "shouts-out?"
+BEZZIIIIIII WE LOVE YOUUUUU <3 Bezi made our lives so much easier with such an intuitive way of desigining our work.
 
-We would like to thank our favorite mentor, ece3603a-7f91-4b20-b29f-54a3d0694d0b for all of their hard work. This project would not have been possible without you.
+Sebastian Yang, thank you so much for your amazing dedication to our clause. How we started off with disecting bodies on a beach, to now increasing trust and transparency with surgery.
+
+Steve Lukas, you're the one that lights the path for the younger generation. We love your humor, humbleness, and motivation to seamlessly integrate XR into a specific purpose of life.
