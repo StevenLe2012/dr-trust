@@ -9,9 +9,10 @@ This is where a description of your project will go. README.md files support [Ma
 **Oh yeah, by the way, don't forget to set up `git lfs` on your machine.**
 
 
+
 ### Hardware Required
 
-- Quest 3 Device
+- Meta Quest 3
 
 ### Software Dependencies
 DO WE NEED?
@@ -27,7 +28,8 @@ DO WE NEED?
 2. 
 
 
-### GitHub Method 
+
+### GitHub Method
 ```shell
 # install the sotware
 sudo apt install -y cmatrix
@@ -45,6 +47,11 @@ cmatrix
 
 BEZZIIIIIII WE LOVE YOUUUUU <3 Bezi made our lives so much easier with such an intuitive way of desigining our work.
 
-Sebastian Yang, thank you so much for your amazing dedication to our clause. How we started off with disecting bodies on a beach, to now increasing trust and transparency with surgery.
+Sebastian Yang, thank you so much for your amazing dedication to our cause. How we started off with disecting bodies on a beach, to now increasing trust and transparency with surgery.
 
 Steve Lukas, you're the one that lights the path for the younger generation. We love your humor, humbleness, and motivation to seamlessly integrate XR into a specific purpose of life.
+
+
+Best regards,
+
+Steven Le (He/Him/His)
