@@ -31,8 +31,8 @@ void Start()
         lineRenderer = GetComponent<LineRenderer>();
 
         // // Subscribe to the action events
-        controller.selectAction.action.performed += OnSelectPerformed;
-        controller.selectAction.action.canceled += OnSelectCanceled;
+        controller.activateAction.action.performed += OnSelectPerformed;
+        controller.activateAction.action.canceled += OnSelectCanceled;
     }
     // private void Update()
     // {
@@ -65,22 +65,29 @@ void Start()
     // This method will be called when the select action is performed (i.e., the trigger button is pressed)
     private void OnSelectPerformed(UnityEngine.InputSystem.InputAction.CallbackContext context)
     {
+        print("PERFORMEND ACTION");
         // Change the layer mask
-        rayInteractor.interactionLayerMask = LayerMask.GetMask(modifiedLayerMask);
+        rayInteractor.interactionLayerMask = LayerMask.GetMask("TransparentFX");
 
         // Change line color to red
         if (lineRenderer != null)
         {
             lineRenderer.startColor = Color.red;
+            // lineRenderer.s
             lineRenderer.endColor = Color.red;
+        }
+        else
+        {
+            print("Trash");
         }
     }
 
     // This method will be called when the select action is canceled (i.e., the trigger button is released)
     private void OnSelectCanceled(UnityEngine.InputSystem.InputAction.CallbackContext context)
     {
+        print("CANCELLED ACTION");
         // Revert the layer mask
-        rayInteractor.interactionLayerMask = LayerMask.GetMask(modifiedLayerMask);
+        rayInteractor.interactionLayerMask = LayerMask.GetMask("Default");
 
         // Revert line color to original
         if (lineRenderer != null)
