@@ -1,57 +1,55 @@
 # Dr. Trust
 
-Obviously, this is not what your README should say on-submission. Change it. Yes, the whole thing.
-
-This is where a description of your project will go. README.md files support [Markdown syntax](https://www.markdownguide.org/basic-syntax/).
+Connecting doctors and patients by increasing transparency during difficult medical conversations (such as pre-surgery debriefs). Ultimately bolstering patient confidence in the medical system, and allowing healthcare to save more lives.
 
 ## Setup
 
-**Oh yeah, by the way, don't forget to set up `git lfs` on your machine.**
+Dr. Trust is a mixed reality experience that can be used both in-person and remotely through a multiplayer internet connection.
+Therefore you will need:
 
+### Hardware:
 
+- 2 Meta Quest 3's (or Pro's) - one for the doctor and one for the patient
+- Optional: Additional Meta 3/Pro's to bring in a patient's family members (even if they're remote)
+- Oculus Touch Controllers (hand tracking will be supported in a future update - controllers offer the required level of precision for now)
 
-### Hardware Required
+### Software Dependencies:
 
-- Meta Quest 3
+If you're simply using Dr. Trust, you just need to load our APK onto your Quest headset (via Meta Quest Developer Hub or Sideload)
 
-### Software Dependencies
-DO WE NEED?
-- Division Game Engine version `2024.1.26`
-- Michaelsoft Binbows `XD`
+If you'd like to modify our app on your own computer, you'll need these softwares and libraries:
 
-## Run
+1. Unity
+2. Normcore - realtime multi-user sessions
+3. OpenXR
+4. Unity XR Interaction Toolkit
+5. Unity AR Foundation
+6. glTFast - rendering glTF and GLB models
+   Furthermore, be sure to go to "Project Settings", and switch the target platform to "Android", since Meta Quest is based on Android.
 
-### APK Method
-1. Sideload this [APK](https://www.google.com/) onto your Quest. Many ways to do so:
-    1. [SideQuest](https://sidequestvr.com/)
-    2. [Meta Quest Developor Hub](https://developer.oculus.com/meta-quest-developer-hub/)
-2. 
+## Launch and Usage
 
+- Launch the app
+- Press and hold the Oculus/Meta button to bring the surgical table in front of you
+- To interact with an organ, highlight it with the ray, and press the grab (middle finger) button. It will snap to a floating position once released
+- To annotate the body outline, cast a ray onto the body, then hit the trigger (index finger) button. It will paint a red line on the body
+- To clear all annotations, select the trash bin at the foot of the surgical table with your right controller
+- Press 'A' to select your role - "Doctor" or "Patient" and "Physical" or "Remote"; You'll be given corresonding avatars and name tags, and be able to hear others if remote.
 
+### Pushing a modded APK
 
-### GitHub Method
-```shell
-# install the sotware
-sudo apt install -y cmatrix
-# run the trap
-cmatrix
-```
-
-3. After the process completes and you don't even see the code, anymore, you are ready. Here is what it looks like:
-
-```js
-"b" + "a" + +"a" + "a"; // 'baNaNa'
-```
+- Install Meta Quest Development Hub
+- Go to "Build Settings" and build an APK
+- Drag the .apk file into the Meta Quest Development Hub
+- Open your headset and launch
 
 ## Shout-Outs
 
-BEZZIIIIIII WE LOVE YOUUUUU <3 Bezi made our lives so much easier with such an intuitive way of desigining our work.
+BEZI!!! <3 Bezi made our lives so much easier with such an intuitive way of desigining our work. Before learning about them this hackathon, we'd either struggle with conceptualizing 3D in Figma, painstakingly use a 3D engine like Unity for Spatial Design, or just give up and sketch on paper. Bezi made our 2 designers feel like 5 or 6, despite this being their first time using it. Thank you Julian and Daniel for the great workshop and consistent support!
 
 Sebastian Yang, thank you so much for your amazing dedication to our cause. How we started off with disecting bodies on a beach, to now increasing trust and transparency with surgery.
 
 Steve Lukas, you're the one that lights the path for the younger generation. We love your humor, humbleness, and motivation to seamlessly integrate XR into a specific purpose of life.
 
-
-Best regards,
-
-Steven Le (He/Him/His)
+Working on Dr. Trust has been such an incredible and purposeful joy.
+So the biggest thank you goes to MIT Reality Hacks and all the amazing, hard working event coordinators who made this all possible! An event of this scale can't be easy, and we're so grateful to you for making it happen <3
