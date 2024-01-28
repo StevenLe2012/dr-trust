@@ -3,21 +3,50 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class RayInteractorController : MonoBehaviour
 {
+    public GameObject circlePrefab;
+    public float paintInterval = 0.1f;
+    private float timeSinceLastPaint = 0.0f;
     public ActionBasedController controller;
     public XRRayInteractor rayInteractor;
 
     private bool isTriggerPressed = false;
 
-    private LineRenderer lineRenderer;
+    private XRInteractorLineVisual lineVisual;
     
     void Start()
     {
-        // Get the LineRenderer component from the XRInteractorLineVisual
-        lineRenderer = GetComponent<LineRenderer>();
+        // Get the XRInteractorLineVisual component from the XRInteractorLineVisual
+        lineVisual = GetComponent<XRInteractorLineVisual>();
 
         // // Subscribe to the action events
         controller.activateAction.action.performed += OnSelectPerformed;
         controller.activateAction.action.canceled += OnSelectCanceled;
+    }
+
+    void Update(){
+        if (isTriggerPressed)
+        {
+            Paint();
+        }
+    }
+
+    private void Paint()
+    {
+        if (Time.time - timeSinceLastPaint >= paintInterval)
+        {
+            timeSinceLastPaint = Time.time;
+            
+            // Perform the raycast using the ray interactor
+            if (rayInteractor.TryGetCurrent3DRaycastHit(out RaycastHit hit))
+            {
+                // Check if the hit object's layer is in the paintLayerMask
+                if (((1 << hit.collider.gameObject.layer) & rayInteractor.raycastMask) != 0)
+                {
+                    // Instantiate the circle at the hit location, facing up based on the hit normal
+                    Instantiate(circlePrefab, hit.point, Quaternion.LookRotation(hit.normal));
+                }
+            }
+        }
     }
 
     // This method will be called when the select action is performed (i.e., the trigger button is pressed)
@@ -26,11 +55,18 @@ public class RayInteractorController : MonoBehaviour
         // Change the layer mask
         rayInteractor.raycastMask = LayerMask.GetMask("TransparentFX");
 
+        isTriggerPressed = true;
+
         // Change line color to red
-        if (lineRenderer != null)
+        if (lineVisual != null)
         {
-            lineRenderer.startColor = Color.red;
-            lineRenderer.endColor = Color.red;
+            // gradient from solid red to transparent
+            Gradient gradient = new Gradient();
+            gradient.SetKeys(
+                new GradientColorKey[] { new GradientColorKey(Color.red, 0.0f), new GradientColorKey(Color.red, 1.0f) },
+                new GradientAlphaKey[] { new GradientAlphaKey(1.0f, 0.0f), new GradientAlphaKey(0.0f, 1.0f) }
+            );
+            lineVisual.invalidColorGradient = gradient;
         }
     }
 
@@ -39,12 +75,19 @@ public class RayInteractorController : MonoBehaviour
     { 
         // Revert the layer mask
         rayInteractor.raycastMask = LayerMask.GetMask("Default");
+
+        isTriggerPressed = false;
         
         // Revert line color to original
-        if (lineRenderer != null)
+        if (lineVisual != null)
         {
-            lineRenderer.startColor = Color.white; // Assuming white is the original color
-            lineRenderer.endColor = Color.white;
+            // gradient from solid white to transparent
+            Gradient gradient = new Gradient();
+            gradient.SetKeys(
+                new GradientColorKey[] { new GradientColorKey(Color.white, 0.0f), new GradientColorKey(Color.white, 1.0f) },
+                new GradientAlphaKey[] { new GradientAlphaKey(1.0f, 0.0f), new GradientAlphaKey(0.0f, 1.0f) }
+            );
+            lineVisual.invalidColorGradient = gradient;
         }
     }
 
