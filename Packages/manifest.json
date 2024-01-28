@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "com.unity.cloud.gltfast": "https://github.com/atteneder/glTFast.git",
+    "com.normalvr.normcore": "2.7.2",
     "com.unity.collab-proxy": "2.2.0",
     "com.unity.feature.development": "1.0.1",
     "com.unity.shadergraph": "14.0.10",
@@ -44,5 +45,15 @@
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
     "com.unity.modules.xr": "1.0.0"
-  }
+  },
+  "scopedRegistries": [
+    {
+      "name": "Normal",
+      "url": "https://normcore-registry.normcore.io",
+      "scopes": [
+        "com.normalvr",
+        "io.normcore"
+      ]
+    }
+  ]
 }

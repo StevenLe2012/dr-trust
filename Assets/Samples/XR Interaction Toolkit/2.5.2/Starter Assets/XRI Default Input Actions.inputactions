@@ -1577,6 +1577,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "\"A\"",
+                    "type": "Button",
+                    "id": "ebaec836-16d4-4b76-81d0-d9b096993d13",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -1742,6 +1751,39 @@
                     "processors": "ScaleVector2(x=0),StickDeadzone",
                     "groups": "Generic XR Controller",
                     "action": "Scale Delta",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "44c7efc1-2381-41e5-a90d-0c8fd54bdd24",
+                    "path": "<XRController>{RightHand}/{PrimaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "\"A\"",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "79b68c25-a387-4ed4-bd23-a5166ab3991c",
+                    "path": "<TouchscreenGestureInputController>{LeftHand}/{PinchReady}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "\"A\"",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8924a054-11f6-4a10-981c-b60412eee07c",
+                    "path": "<XRHandDevice>{LeftHand}/{PinchReady}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "\"A\"",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
