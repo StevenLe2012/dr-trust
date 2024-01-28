@@ -377,7 +377,7 @@ PrefabInstance:
       addedObject: {fileID: 1061977957291933174}
     - targetCorrespondingSourceObject: {fileID: 1295458233085713644, guid: 5eccbf4be2c00e94689ee8062e4e7276, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8070475857705555493}
+      addedObject: {fileID: 3637456090048767272}
     - targetCorrespondingSourceObject: {fileID: 9153272346877832867, guid: 5eccbf4be2c00e94689ee8062e4e7276, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5731662382447316554}
@@ -634,7 +634,7 @@ MonoBehaviour:
   _syncScale: 1
   _syncVelocity: 1
   _maintainOwnershipWhileSleeping: 0
---- !u!114 &8070475857705555493
+--- !u!114 &3637456090048767272
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -646,8 +646,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 299229334bf954b2fb3ebac820c23f82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  circlePrefab: {fileID: 0}
-  paintInterval: 0.1
+  circlePrefab: {fileID: 4033920549708716585, guid: ca1e83f63eec44bc7af81ec964e4ba00, type: 3}
+  paintInterval: 0.0001
   controller: {fileID: 1891710111720022254}
   rayInteractor: {fileID: 1874358449958474646}
 --- !u!1 &7415682094161921603 stripped
@@ -708,7 +708,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 299229334bf954b2fb3ebac820c23f82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  circlePrefab: {fileID: 0}
-  paintInterval: 0.1
+  circlePrefab: {fileID: 4033920549708716585, guid: ca1e83f63eec44bc7af81ec964e4ba00, type: 3}
+  paintInterval: 0.0001
   controller: {fileID: 1891710110000472078}
   rayInteractor: {fileID: 1852488423194611485}

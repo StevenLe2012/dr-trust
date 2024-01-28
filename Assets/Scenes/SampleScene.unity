@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028326, g: 0.22571333, b: 0.30692202, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -277,38 +277,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &969610083 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7304725211229723336, guid: c63527cb4ea083d47a49394f6d454851, type: 3}
-  m_PrefabInstance: {fileID: 5868537161166213129}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &969610089
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 969610083}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 299229334bf954b2fb3ebac820c23f82, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  circlePrefab: {fileID: 4033920549708716585, guid: ca1e83f63eec44bc7af81ec964e4ba00, type: 3}
-  paintInterval: 0.0001
-  controller: {fileID: 1768069890}
-  rayInteractor: {fileID: 969610090}
---- !u!114 &969610090 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1874358449958474646, guid: c63527cb4ea083d47a49394f6d454851, type: 3}
-  m_PrefabInstance: {fileID: 5868537161166213129}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 969610083}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6803edce0201f574f923fd9d10e5b30a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1504511584
 GameObject:
   m_ObjectHideFlags: 0
@@ -415,17 +383,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1768069890 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1891710111720022254, guid: c63527cb4ea083d47a49394f6d454851, type: 3}
-  m_PrefabInstance: {fileID: 5868537161166213129}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: caff514de9b15ad48ab85dcff5508221, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &3352275479230410067
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -564,14 +521,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 299444246055110484, guid: c63527cb4ea083d47a49394f6d454851, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2269826854018843254, guid: c63527cb4ea083d47a49394f6d454851, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2646786812991681069, guid: c63527cb4ea083d47a49394f6d454851, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -612,50 +561,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3119228114708218172, guid: c63527cb4ea083d47a49394f6d454851, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4162780558342280724, guid: c63527cb4ea083d47a49394f6d454851, type: 3}
-      propertyPath: m_MinLineLength
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 4211843870950673055, guid: c63527cb4ea083d47a49394f6d454851, type: 3}
-      propertyPath: m_MinLineLength
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 5065332141359310625, guid: c63527cb4ea083d47a49394f6d454851, type: 3}
-      propertyPath: _realtime
-      value: 
-      objectReference: {fileID: 5868537161166213130}
     - target: {fileID: 5065332141359310625, guid: c63527cb4ea083d47a49394f6d454851, type: 3}
       propertyPath: _viewUUID
       value: 23eaaf9e-bb9a-44d3-b6f1-f12a1d4afdbf
       objectReference: {fileID: 0}
-    - target: {fileID: 5632709603341228620, guid: c63527cb4ea083d47a49394f6d454851, type: 3}
-      propertyPath: circlePrefab
-      value: 
-      objectReference: {fileID: 4033920549708716585, guid: ca1e83f63eec44bc7af81ec964e4ba00, type: 3}
-    - target: {fileID: 5632709603341228620, guid: c63527cb4ea083d47a49394f6d454851, type: 3}
-      propertyPath: paintInterval
-      value: 0.0001
-      objectReference: {fileID: 0}
-    - target: {fileID: 5657879796569378679, guid: c63527cb4ea083d47a49394f6d454851, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5657879796569378679, guid: c63527cb4ea083d47a49394f6d454851, type: 3}
-      propertyPath: inputAction.m_Reference
-      value: 
-      objectReference: {fileID: 83097790271614945, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-    - target: {fileID: 6114345785324101712, guid: c63527cb4ea083d47a49394f6d454851, type: 3}
-      propertyPath: m_UIScrollingEnabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8160882763134759428, guid: c63527cb4ea083d47a49394f6d454851, type: 3}
-      propertyPath: _realtime
-      value: 
-      objectReference: {fileID: 5868537161166213130}
     - target: {fileID: 8160882763134759428, guid: c63527cb4ea083d47a49394f6d454851, type: 3}
       propertyPath: _viewUUID
       value: a1ebff0c-0791-49a2-a9fc-72528f4de86a
@@ -664,18 +573,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Interaction Hands Setup
       objectReference: {fileID: 0}
-    - target: {fileID: 8693251285915147187, guid: c63527cb4ea083d47a49394f6d454851, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8070475857705555493, guid: c63527cb4ea083d47a49394f6d454851, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7304725211229723336, guid: c63527cb4ea083d47a49394f6d454851, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 969610089}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c63527cb4ea083d47a49394f6d454851, type: 3}
 --- !u!114 &5868537161166213130 stripped
 MonoBehaviour:

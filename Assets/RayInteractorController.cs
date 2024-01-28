@@ -1,3 +1,4 @@
+using Normal.Realtime;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
@@ -45,7 +46,8 @@ public class RayInteractorController : MonoBehaviour
                 if (((1 << hit.collider.gameObject.layer) & rayInteractor.raycastMask) != 0)
                 {
                     // Instantiate the circle at the hit location, facing up based on the hit normal
-                    Instantiate(circlePrefab, hit.point, Quaternion.LookRotation(hit.normal));
+                    // Instantiate(circlePrefab, hit.point, Quaternion.LookRotation(hit.normal));
+                    Realtime.Instantiate(circlePrefab.name, position: hit.point, rotation: Quaternion.LookRotation(hit.normal));
                 }
             }
         }
