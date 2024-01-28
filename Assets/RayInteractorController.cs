@@ -7,11 +7,13 @@ public class RayInteractorController : MonoBehaviour
     public XRRayInteractor rayInteractor;
 
     private bool isTriggerPressed = false;
+    private int _defaultLayer;
 
     private LineRenderer lineRenderer;
     
     void Start()
     {
+        _defaultLayer = rayInteractor.raycastMask.value;
         // Get the LineRenderer component from the XRInteractorLineVisual
         lineRenderer = GetComponent<LineRenderer>();
 
@@ -24,7 +26,7 @@ public class RayInteractorController : MonoBehaviour
     private void OnSelectPerformed(UnityEngine.InputSystem.InputAction.CallbackContext context)
     {
         // Change the layer mask
-        rayInteractor.raycastMask = LayerMask.GetMask("TransparentFX");
+        rayInteractor.raycastMask = LayerMask.GetMask("TransparentFX") | LayerMask.GetMask("UI");
 
         // Change line color to red
         if (lineRenderer != null)
@@ -38,7 +40,7 @@ public class RayInteractorController : MonoBehaviour
     private void OnSelectCanceled(UnityEngine.InputSystem.InputAction.CallbackContext context)
     { 
         // Revert the layer mask
-        rayInteractor.raycastMask = LayerMask.GetMask("Default");
+        rayInteractor.raycastMask = _defaultLayer;
         
         // Revert line color to original
         if (lineRenderer != null)

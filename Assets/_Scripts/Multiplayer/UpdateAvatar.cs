@@ -67,11 +67,25 @@ public class UpdateAvatar : MonoBehaviour
     
     public void SetPatientColor()
     {
+        print("SetPatientColor");
         _realtimeAvatar.GetComponentInChildren<ColorSync>().SetColor(patientColor);
     }
     
     public void SetDoctorColor()
     {
+        print("SetDoctorColor");
         _realtimeAvatar.GetComponentInChildren<ColorSync>().SetColor(doctorColor);
+    }
+    
+    public void SetDoctorBody()
+    {
+        print("SetDoctorBody");
+        _realtimeAvatar.GetComponentInChildren<BodySync>().SetActiveState(true);
+    }
+    
+    public void SetPatientBody()
+    {
+        print("SetPatientBody");
+        _realtimeAvatar.GetComponentInChildren<BodySync>().SetActiveState(false);
     }
 }
