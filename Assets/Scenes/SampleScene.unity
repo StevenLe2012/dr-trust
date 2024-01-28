@@ -444,7 +444,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8016142203637256716, guid: 1d1ede5b3f4244de38b569371a86b450, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.1694
+      value: 0.1569
       objectReference: {fileID: 0}
     - target: {fileID: 8016142203637256716, guid: 1d1ede5b3f4244de38b569371a86b450, type: 3}
       propertyPath: m_LocalPosition.y
@@ -452,7 +452,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8016142203637256716, guid: 1d1ede5b3f4244de38b569371a86b450, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.031
+      value: 0.0445
       objectReference: {fileID: 0}
     - target: {fileID: 8016142203637256716, guid: 1d1ede5b3f4244de38b569371a86b450, type: 3}
       propertyPath: m_LocalRotation.w
@@ -990,6 +990,10 @@ PrefabInstance:
     - target: {fileID: 7171071953221186112, guid: 0f7d9f7c645d48e45ae49637d3d781eb, type: 3}
       propertyPath: m_Name
       value: Patient on Table
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342298782320455466, guid: 0f7d9f7c645d48e45ae49637d3d781eb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.1437
       objectReference: {fileID: 0}
     - target: {fileID: 8665511636698299731, guid: 0f7d9f7c645d48e45ae49637d3d781eb, type: 3}
       propertyPath: _realtime
