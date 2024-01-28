@@ -41,10 +41,9 @@ public class BodySync : RealtimeComponent<BodySyncModel>
         body.SetActive(model.isActive);
     }
 
-    public void ToggleActiveState()
+    public void SetActiveState(bool isActive)
     {
-        // Toggle the active state and update the model
-        bool currentState = model.isActive;
-        model.isActive = !currentState;
+        // Sets the active state and update the model
+        model.isActive = isActive;
     }
 }
