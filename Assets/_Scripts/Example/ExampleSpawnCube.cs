@@ -7,13 +7,13 @@ public class ExampleSpawnCube : MonoBehaviour
     [SerializeField] private float spawnSpeed;
     [SerializeField] private InputActionProperty inputAction;
 
-    private void Update()
-    {
-        if (inputAction.action.WasPressedThisFrame())
-        {
-            GameObject spawnedCube = Instantiate(cubePrefab, transform.position, Quaternion.identity);
-            Rigidbody cubeRigidbody = spawnedCube.GetComponent<Rigidbody>();
-            cubeRigidbody.velocity = transform.forward * spawnSpeed;
-        }
-    }
+    // private void Update()
+    // {
+    //     if (inputAction.action.WasPressedThisFrame())
+    //     {
+    //         GameObject spawnedCube = Instantiate(cubePrefab, transform.position, Quaternion.identity);
+    //         Rigidbody cubeRigidbody = spawnedCube.GetComponent<Rigidbody>();
+    //         cubeRigidbody.velocity = transform.forward * spawnSpeed;
+    //     }
+    // }
 }
