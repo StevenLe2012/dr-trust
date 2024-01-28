@@ -295,7 +295,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   circlePrefab: {fileID: 4033920549708716585, guid: ca1e83f63eec44bc7af81ec964e4ba00, type: 3}
-  paintInterval: 0.001
+  paintInterval: 0.0001
   controller: {fileID: 1768069890}
   rayInteractor: {fileID: 969610090}
 --- !u!114 &969610090 stripped
@@ -632,6 +632,14 @@ PrefabInstance:
       propertyPath: _viewUUID
       value: 23eaaf9e-bb9a-44d3-b6f1-f12a1d4afdbf
       objectReference: {fileID: 0}
+    - target: {fileID: 5632709603341228620, guid: c63527cb4ea083d47a49394f6d454851, type: 3}
+      propertyPath: circlePrefab
+      value: 
+      objectReference: {fileID: 4033920549708716585, guid: ca1e83f63eec44bc7af81ec964e4ba00, type: 3}
+    - target: {fileID: 5632709603341228620, guid: c63527cb4ea083d47a49394f6d454851, type: 3}
+      propertyPath: paintInterval
+      value: 0.0001
+      objectReference: {fileID: 0}
     - target: {fileID: 5657879796569378679, guid: c63527cb4ea083d47a49394f6d454851, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -660,7 +668,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8070475857705555493, guid: c63527cb4ea083d47a49394f6d454851, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:

@@ -646,6 +646,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 299229334bf954b2fb3ebac820c23f82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  circlePrefab: {fileID: 0}
+  paintInterval: 0.1
   controller: {fileID: 1891710111720022254}
   rayInteractor: {fileID: 1874358449958474646}
 --- !u!1 &7415682094161921603 stripped
@@ -706,5 +708,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 299229334bf954b2fb3ebac820c23f82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  circlePrefab: {fileID: 0}
+  paintInterval: 0.1
   controller: {fileID: 1891710110000472078}
   rayInteractor: {fileID: 1852488423194611485}
