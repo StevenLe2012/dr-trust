@@ -1,6 +1,18 @@
-# Dr. Trust
+# Dr. Trust - MIT Reality Hacks Winner (Best Use of Bezi)
 
 Connecting doctors and patients by increasing transparency during difficult medical conversations (such as pre-surgery debriefs). Ultimately bolstering patient confidence in the medical system, and allowing healthcare to save more lives.
+
+- Devpost:https://devpost.com/software/dr-trust
+- YouTube: https://youtu.be/b7dJazhTQVk?si=TBphu_llmTRP2jBX
+
+[![Dr. Trust](https://i.imgur.com/YiZk0xC.png)](https://youtu.be/b7dJazhTQVk?si=8fTEslpDUvDi1G-E "Dr. Trust")
+
+### Team Contributions: "4 Trojans and a Tree"
+- [Steven Le](https://www.linkedin.com/in/stevenle1337/) (Stanford) - Backend Unity with Meta's Presence Platform and Normcore's multiplayer solution.
+- [Vikram Agrawal](https://www.linkedin.com/in/vikram-agrawal/) (USC) - Frontend Unity with Bezi Integration
+- [Jessica Sheng](https://www.linkedin.com/in/jlsheng/) (USC) - Design with Blender + Bezi
+- [Coco Xiong](https://www.linkedin.com/in/ziyuxiong-coco/) (USC) - Design with Bezi and Video Editing + Narrative
+- Amanda Leong (USC) - Researcher + Narrative Lead
 
 ## Setup
 
