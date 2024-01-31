@@ -10,9 +10,9 @@ Connecting doctors and patients by increasing transparency during difficult medi
 ### Team Contributions: "4 Trojans and a Tree"
 - [Steven Le](https://www.linkedin.com/in/stevenle1337/) (Stanford) - Backend Unity with Meta's Presence Platform and Normcore's multiplayer solution.
 - [Vikram Agrawal](https://www.linkedin.com/in/vikram-agrawal/) (USC) - Frontend Unity with Bezi Integration
-- [Jessica Sheng](https://www.linkedin.com/in/jlsheng/) (USC) - Design with Blender + Bezi
-- [Coco Xiong](https://www.linkedin.com/in/ziyuxiong-coco/) (USC) - Design with Bezi and Video Editing + Narrative
-- Amanda Leong (USC) - Researcher + Narrative Lead
+- [Jessica Sheng](https://www.linkedin.com/in/jlsheng/) (USC) - Design with Blender + Bezi, and Narrative
+- [Coco Xiong](https://www.linkedin.com/in/ziyuxiong-coco/) (USC) - Design with Bezi, and Video Editing + Narrative
+- Amanda Leong (USC) - Project Manager + Medical Lead + Researcher + Director + Narrative Lead
 
 ## Setup
 
